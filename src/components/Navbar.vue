@@ -1,8 +1,18 @@
 <template lang="">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;position: sticky;top: 0;">
+  <nav
+    class="navbar navbar-expand-lg navbar-light bg-light"
+    style="
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      position: sticky;
+      top: 0;
+    "
+  >
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
-        <img style="width: 200px;" :src="require('../assets/img/VNA_logo_vn.png')"/>
+        <img
+          style="width: 200px"
+          :src="require('../assets/img/VNA_logo_vn.png')"
+        />
       </router-link>
       <button
         class="navbar-toggler"
@@ -15,7 +25,10 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarNavDropdown"
+      >
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link exact active-class="active" class="nav-link" to="/"
@@ -28,7 +41,7 @@
             >
           </li>
           <li class="nav-item">
-           <router-link active-class="active" class="nav-link" to="/stations"
+            <router-link active-class="active" class="nav-link" to="/stations"
               >Stations</router-link
             >
           </li>
@@ -49,13 +62,15 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          
         </ul>
         <div class="nav-item text-dark">
-           <router-link active-class="active" class="nav-link text-dark" to="/admin/stations"
-              >Login</router-link
-            >
-          </div>
+          <router-link
+            active-class="active"
+            class="nav-link text-dark"
+            to="/admin/stations"
+            >Login</router-link
+          >
+        </div>
       </div>
     </div>
   </nav>
