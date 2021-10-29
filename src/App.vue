@@ -1,5 +1,53 @@
 <template>
   <div id="app">
+    <router-view/>
+  </div>
+</template>
+<script>
+export default {
+  created(){
+    this.$store.dispatch("tryAuthLogin")
+  }
+  
+}
+</script>
+<style lang="scss">
+  
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <template>
+  <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
@@ -26,3 +74,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+-->
